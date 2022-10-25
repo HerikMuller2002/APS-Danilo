@@ -1,0 +1,15 @@
+Alligator
+Anteater
+Armadillo
+Bat
+Bear
+Butterfly
+Camel
+Cat
+Chameleon
+Chicken
+Cow
+Dog
+Donkey
+Dolphin
+Elephant
