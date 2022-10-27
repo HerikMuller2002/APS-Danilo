@@ -1,8 +1,10 @@
-from classeidioma import Idiomas
-from random import choice
 #Algoritmo : Jogo Termo
 #Data : 18/10/2022
 #Desenvolvido por : Caio e amigos
+
+# Import
+from classeidioma import Idiomas
+import random
 
 # Escolhendo o idioma
 while True:
@@ -14,7 +16,7 @@ while True:
         continue
     else:
         idioma_escolhido = Idiomas.lingua(idioma)
-        print('\n',idioma_escolhido,'\n')
+        print('\n',idioma_escolhido)
         break
 
 # Definindo tema
@@ -34,7 +36,7 @@ while True:
 # Predefinindo o jogo
 while True:
     try:
-        quant_palavras = int(input('Qual será a quantidade de palavras?(1 - 4): '))
+        quant_palavras = int(input('\nQual será a quantidade de palavras?(1 - 4): '))
         if quant_palavras > 4 or quant_palavras < 1:
             print('Erro!\nDigite um número de 1 a 4!')
             continue
@@ -44,7 +46,21 @@ while True:
         print('Erro!\nDigite um número de 1 a 4!')
 
 #Processamento do jogo
-palavra_sorteada = choice(tema_escolhido).split()
-palavra_secreta = []
-for i in palavra_sorteada:
-    palavra_secreta.append('_')
+palavra_secreta = random.choice(tema_escolhido)
+palavra_secreta = list(palavra_secreta)
+
+chute = str(input("\nDigite uma palavra: "))
+chute = list(chute)
+lista_resultado = chute
+
+for i in range(0,len(chute)):
+    if chute[i] == palavra_secreta[i]:
+        lista_resultado[i] = "\033[32m{}\033[m".format(chute[i])
+    if chute[i] != palavra_secreta[i] and chute[i] in palavra_secreta:
+        lista_resultado[i] = "\033[33m{}\033[m".format(chute[i])
+    if chute[i] != palavra_secreta[i] and chute[i] not in palavra_secreta:
+        lista_resultado[i] = "\033[1m{}\033[m".format(chute[i])
+
+resultado = ''.join(lista_resultado)
+print(resultado,'\n')
+print(palavra_secreta)    
