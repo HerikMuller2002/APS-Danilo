@@ -1,0 +1,16 @@
+Camel
+Snake
+Horse
+Tiger
+bunny
+eagle
+goose
+hyena
+koala
+mouse
+raven
+shark
+sheep
+snail
+squid
+zebra
