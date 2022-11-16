@@ -6,16 +6,16 @@ Herik Muller dos Reis
 Ra: N7625C4
 
 Caio saggioratoo 
-N774665
+Ra: N774665
 
 Leonardo Bassani
-G48HDC4
+Ra: G48HDC4
 
 Felipe Atanazio de Souza
-N9634F7
+Ra: N9634F7
 
 Daniel Henrique Fachinelli
-G516680
+Ra: G516680
 
 
 Nome do Jogo: Termo
