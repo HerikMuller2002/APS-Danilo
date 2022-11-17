@@ -22,7 +22,7 @@ Nome do Jogo: Termo
 
 •  Como jogar !
 
-No Jogo Consiste em 2 temas: Digite 1-Português ou 2-Inglês.
+No Jogo Consiste em 2 Idiomas: Digite 1-Português ou 2-Inglês.
 
 No Jogo tem 3 temas de palavras já selecionadas: 1-Animais, 2-Alimentos e 3-Lugares.
 
