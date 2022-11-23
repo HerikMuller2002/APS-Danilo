@@ -344,6 +344,7 @@ class Jogo:
         return palavra
     
 #=========================================================
+    # função para verificar as letras do chute do usuário
     def verificar(chute,palavra):
         # Criando uma lista para guardar as letras coloridas verificadas.       
         lista_resultado = []
